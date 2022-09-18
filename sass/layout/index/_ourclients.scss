@@ -1,0 +1,34 @@
+.our-clients{
+&__position {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+&__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+&__list {
+    display: flex;
+    gap: 30px;
+}
+&__link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--clients-border);
+    border-radius: 4px;
+    fill: rgba(175, 177, 184, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__link:hover,
+       :focus {
+    fill: var(--buttons-links);
+    border-color: var(--buttons-links);
+}
+}

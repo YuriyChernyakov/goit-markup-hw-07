@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css/styles.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
   <header class="header"> 
@@ -17,9 +17,9 @@
       <a href="index.html" class="logo logo__header" >
         Web<span class="logo_dark">Studio</span></a>
       <ul class="site-nav">
-        <li class="site__nav_list"> <a href="./index.html" class="site-nav__link site-nav__link_accent">Студія</a></li>
-        <li class="site__nav_list"> <a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
-        <li class="site__nav_list"> <a href="" class="site-nav__link">Контакти</a></li>
+        <li class="site-nav__list"> <a href="./index.html" class="site-nav__link site-nav__link_accent">Студія</a></li>
+        <li class="site-nav__list"> <a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
+        <li class="site-nav__list"> <a href="" class="site-nav__link">Контакти</a></li>
       </ul>
     </nav>
     <ul class="auth-nav auth-nav__position">
@@ -107,7 +107,7 @@
   <section class="our-team our-team__paddings">
     <div class="container container__position_ourt">
     <h2 class="our-team__title">Наша команда</h2>
-    <ul class="out-team__list">  
+    <ul class="our-team__members">  
   <li class="our-team__list">
     <img src="./images/team/igor.jpg" alt="Ігор" width="270" height="260">
     <h3 class="our-team__names">Ігор Дем'яненко</h3>
@@ -353,7 +353,7 @@
             <span class="invite-button__text">Підпишіться на розсилку</span>
             <input class="invite-button__input" name="Підписка" type="email" placeholder="E-mail" required>
         </label>
-        <button type="submit" class="button button__footer">
+        <button type="submit" class="button invite-button__footer">
             Підписатися
             <svg width="24px" height="24px">
                 <use href="./images/SVG/symbol-defs.svg#icon-send"></use></svg>
@@ -372,7 +372,7 @@
       </button>
       <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal__form">
-          <label class="modal__label">
+          <label>
             <span class="modal__span">Ім'я</span>
           <div class="modal__svg">
             <input class="modal__input" name="Ім'я" type="text" required pattern="[a-zA-Zа-яА-ЯІіЇї']+">
@@ -381,7 +381,7 @@
           </svg>
         </div>
         </label>
-        <label class="modal__label">
+        <label>
           <span class="modal__span">Телефон</span>
           <div class="modal__svg">
           <input class="modal__input" name="Телефон" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
@@ -390,7 +390,7 @@
           </svg>
         </div>
         </label>
-        <label class="modal__label">
+        <label>
           <span class="modal__span">Пошта</span>
           <div class="modal__svg">
           <input class="modal__input" name="Пошта" type="email" required>
@@ -399,11 +399,11 @@
           </svg>
         </div>
         </label>
-        <label class="modal__label">
+        <label>
           <span class="modal__span">Коментар</span>
         <textarea class="modal__textarea" name="Коментар" placeholder="Введіть текст"></textarea>
       </label>
-      <label class="checkbox modal__label ">
+      <label class="modal__checkbox">
         <input class="modal__input-checkbox" type="checkbox" name="Умови договору" required>
         <svg class="modal__svg-border" width="16px" height="15px">
           <use href="./images/SVG/symbol-defs.svg#icon-Vector"></use>
@@ -412,9 +412,9 @@
           <use href="./images/SVG/symbol-defs.svg#icon-check"></use>
         </svg>
         <span class="modal__span-checkbox">Погоджуюся з розсилкою та приймаю&nbsp;</span>  
-        <a href="">Умови договору</a>
+        <a class="modal__link" href="">Умови договору</a>
       </label>
-      <button type="submit" class="button button__modal">Відправити</button>
+      <button type="submit" class="button modal__button_send">Відправити</button>
         </form>
   </div>
   </div>

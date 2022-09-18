@@ -1,0 +1,123 @@
+.footer{
+    background-color: var(--background-color);
+&__position {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+&__contacts {
+    display: flex;
+    flex-direction: column;
+}
+&__footer {
+    margin-bottom: 20px;
+}
+&__list_adress {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--adress-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__list_adress-contacts {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--adress-color);
+    opacity: 60%;
+}
+&__list_adress:hover,
+              :focus {
+    color: var(--buttons-links);
+}
+}
+
+.container__position_foo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo__footer {
+    margin-bottom: 20px;
+}
+
+.logo_light {
+    color: var(--adress-color);
+}
+
+.invite {
+    display: flex;
+    flex-direction: column;
+&__position {
+    margin-left: 70px;
+    margin-right: 93px;
+}
+&__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--adress-color);
+    padding-top: 12px;
+    margin-bottom: 20px;
+}
+&__list {
+    padding-bottom: 0;
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+&__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    fill: var(--adress-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__link:hover,
+       :focus {
+    background-color: var(--buttons-links);
+}
+}
+
+.invite-button {
+    display: flex;
+    align-items: flex-end;
+&__text {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--adress-color);
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+&__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    background-color: transparent;
+    margin-right: 12px;
+    padding: 15px;
+    color: var(--adress-color);
+}
+}
+
+.invite-button__footer {
+    width: 200px;
+    height: 50px;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+    gap: 10px;
+}
