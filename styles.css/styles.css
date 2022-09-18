@@ -29,35 +29,41 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     --clients-border: #AFB1B8;
     --color-blue-two: #188CE8;}
 
-.header {
-    border: 1px solid var(--border-header-color)}
-
 .container {
     width: 1200px; 
     margin-left: auto; 
     margin-right: auto;
     padding-left: 15px;
-    padding-right: 15px;}
+    padding-right: 15px;
+    }
+    
+.header {
+    border: 1px solid var(--border-header-color)}
 
-.header__container {
+.container__flex {
     display: flex;
-    align-items: center}
+    align-items: center;
+    }
 
 .navigation {
     display: flex;
     align-items: center;}
 
-.navigation__logo {
+.logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    color:var(--buttons-links);
+    color:var(--buttons-links);  
+    }
+
+.logo__header{
     margin-right: 93px;
     padding-top: 24px;
-    padding-bottom: 25px;}
+    padding-bottom: 25px;
+}
 
-.navigation__logo_dark {color:var(--logo-span); }
+.logo_dark {color:var(--logo-span); }
 
 .site-nav {
     align-items: center;
@@ -89,7 +95,7 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     margin-top: 28px;
 }
 
-.site-nav .site-nav__link_accent{
+.site-nav__link_accent{
     color: var(--buttons-links)
 }
 
@@ -114,13 +120,14 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     line-height: 1.2;
     color: var(--txt-about);
     align-items: center;
+    margin-right: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .auth-nav__icon{
     margin-right: 10px;
     fill:currentColor;}
 
-.auth-nav__icon:not(:first-child) {margin-left: 30px;}
+.auth-nav__tel {margin-left: 30px;}
 
 .main {
     background-color: var(--bg-main);
@@ -151,7 +158,10 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     line-height: 1.4;
     color: var(--adress-color);}
 
-.main__button {
+.button {
+    display: flex;
+    align-items: center;
+    text-align: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -170,7 +180,7 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
 .about-us__list {
     display: flex;
 }
-.about-us__list div{
+.about-us__block{
     width: 270px;
     height: 120px;
     display: flex;
@@ -187,9 +197,9 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     color: var(--title-color);
     letter-spacing: 0.03em;}
 
-.about-us__elements:not(:last-child) {margin-right: 30px;}
+.about-us__element:not(:last-child) {margin-right: 30px;}
 
-.about-us-description { 
+.about-us__description { 
     font-size: 14px;
     line-height: 1.8;
     color: var(--txt-about);
@@ -200,7 +210,7 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     padding-bottom: 94px;
 }
 
-.examples__container {
+.container__position_xmpls {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -209,7 +219,7 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
 .examples__list{
     display: flex;}
 
-.examples__container ul li:not(:last-child) {margin-right: 30px;}
+.examples__element:not(:last-child) {margin-right: 30px;}
 
 .examples__title {
     font-weight: 700;
@@ -218,7 +228,7 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     color:var(--title-color);
     margin-bottom: 50px;}
 
-.examples__elements{position: relative;}
+.examples__element{position: relative;}
 
 .examples__description{
     display: flex;
@@ -267,7 +277,7 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     fill: var(--adress-color);
     background-color: var(--buttons-links);}
 
-.our-team__container {
+.container__position_ourt {
     display: flex;
     flex-direction: column;}
 
@@ -298,10 +308,10 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     margin-bottom: 16px;
     text-align: center;}
 
-.our-team__container .our-team__list:not(:last-child) {
+.our-team__list:not(:last-child) {
     margin-right: 30px;}
 
-.our-team__container .our-team__list {
+.our-team__list {
     background-color: var(--adress-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;}
@@ -342,42 +352,36 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     padding-top: 60px;
     padding-bottom: 60px;}
 
-.footer__container {
+.container__position_foo {
     display: flex;
     align-items: flex-start;
 }
 
-.footer__container .footer__contacts{
+.footer__contacts{
     display: flex;
     flex-direction: column;}
 
-.footer__logo {
-    font-family: Raleway, sans-serif;
-    
-    color:var(--buttons-links);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+.logo__footer {
     margin-bottom: 20px;}
     
-.footer__logo_light {color: var(--adress-color);}
+.logo_light {color: var(--adress-color);}
 
-.footer__adress {
+.footer__list_adress {
     font-style: normal;
     font-size: 14px;
     line-height: 1.8;
     color: var(--adress-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.footer__adress-contacts {
+.footer__list_adress-contacts {
     font-size: 14px;
     line-height: 1.8;
     color: var(--adress-color);
     opacity: 60%;
 }
 
-.footer__adress:hover,
-.footer__adress:focus {
+.footer__list_adress:hover,
+.footer__list_adress:focus {
     color: var(--buttons-links);
 }
 
@@ -452,18 +456,10 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     color: var(--adress-color);
 }
 
-.invite-button__btn{
+.button__footer{
     width: 200px;
     height: 50px;
-    background-color: var(--buttons-links);
-    border-color: var(--buttons-links);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
     letter-spacing: 0.06em;
-    color: var(--adress-color);
     display: flex;
     align-items: center;
     padding: 0 28px;
@@ -727,16 +723,14 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     color: var(--txt-about);
 }
 
-.modal__button{
+.button__modal{
+    padding-left: 52px;
+    padding-right: 52px;
     margin: auto;
     margin-top: 30px;
     width: 200px;
     height: 50px;
-    background-color: var(--buttons-links);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    color:var(--adress-color);
+    letter-spacing: 0.06em;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
