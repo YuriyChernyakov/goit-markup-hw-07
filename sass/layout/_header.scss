@@ -1,5 +1,5 @@
 .header {
-    border: 1px solid var(--border-header-color)
+    border: 1px solid var(--border-header-color);
 }
 
 .container__flex {
@@ -36,7 +36,7 @@
 }
 &__link:hover,
        :focus {
-    color: var(--buttons-links)
+    color: var(--buttons-links);
 }
 &__nav_list:not(:last-child) {
     margin-right: 50px;
@@ -55,7 +55,7 @@
     margin-top: 28px;
 }
 &__link_accent {
-    color: var(--buttons-links)
+    color: var(--buttons-links);
 }
 }
 

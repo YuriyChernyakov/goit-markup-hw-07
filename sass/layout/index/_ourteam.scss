@@ -11,13 +11,11 @@
     justify-content: center;
 }
 &__link {
-    display: flex;
+    @extend .modal__checkbox;
     fill: var(--clients-border);
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    align-items: center;
-    justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 &__link:hover,
