@@ -306,7 +306,7 @@
         Web<span class="logo_light">Studio</span></a>
           <address>
             <ul class="footer__list">
-              <li><a class="footer__list_adress"target="_blank" href="https://goo.gl/maps/uGCBGbxVBMCukeLk7">м. Київ, пр-т Лесі Українки,26</a></li>
+              <li><a class="footer__list_adress" target="_blank" href="https://goo.gl/maps/uGCBGbxVBMCukeLk7">м. Київ, пр-т Лесі Українки,26</a></li>
               <li><a class="footer__list_adress footer__list_adress-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
               <li><a class="footer__list_adress footer__list_adress-contacts" href="tell:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
@@ -359,7 +359,6 @@
       </form>
     </div>
     </div>
-    </div>
     </footer>
   <div class="backdrop backdrop__is-hidden" data-modal>
     <div class="modal">
@@ -370,38 +369,38 @@
       </button>
       <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal__form">
-          <label>
+          <label class="modal__label">
             <span class="modal__span">Ім'я</span>
+          </label>
           <div class="modal__svg">
             <input class="modal__input" name="Ім'я" type="text" required pattern="[a-zA-Zа-яА-ЯІіЇї']+">
           <svg aria-label="Персона" width="18px" height="18px" class="modal__svg-img">
             <use href="./images/SVG/symbol-defs.svg#icon-person"></use>
           </svg>
         </div>
-        </label>
-        <label>
+        <label class="modal__label">
           <span class="modal__span">Телефон</span>
+        </label>
           <div class="modal__svg">
           <input class="modal__input" name="Телефон" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
           <svg aria-label="Телефон" width="18px" height="18px" class="modal__svg-img">
             <use href="./images/SVG/symbol-defs.svg#icon-phone-black"></use>
           </svg>
         </div>
-        </label>
-        <label>
+        <label class="modal__label">
           <span class="modal__span">Пошта</span>
+        </label>
           <div class="modal__svg">
           <input class="modal__input" name="Пошта" type="email" required>
           <svg aria-label="Лист" width="18px" height="18px" class="modal__svg-img">
             <use href="./images/SVG/symbol-defs.svg#icon-email"></use>
           </svg>
         </div>
-        </label>
-        <label>
+        <label class="modal__label">
           <span class="modal__span">Коментар</span>
         <textarea class="modal__textarea" name="Коментар" placeholder="Введіть текст"></textarea>
       </label>
-      <label class="modal__checkbox">
+      <label class="modal__label modal__label_checkbox">
         <input class="modal__input-checkbox" type="checkbox" name="Умови договору" required>
         <svg class="modal__svg-border" width="16px" height="15px">
           <use href="./images/SVG/symbol-defs.svg#icon-Vector"></use>
